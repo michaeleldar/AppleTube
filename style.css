@@ -3,6 +3,11 @@ h1 {
     color: red;
 }
 
+h2 {
+    text-align: center;
+    color: red;
+}
+
 body {
     background-color: white;
 }
