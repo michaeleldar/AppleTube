@@ -9,7 +9,8 @@ function scratchtube_clicked() {
 function games_clicked() {
     window.location.href = "games.html";
 }
-function eval_key(key) {
+function eval_key() {
+    key = document.getElementById("key_text_box")
     if (key == "6ty9lkpy") {
         window.location.href = "pro.html";
     }
