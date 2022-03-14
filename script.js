@@ -15,6 +15,6 @@ function eval_key() {
         window.location.href = "pro.html";
     }
     else {
-        return "Incorrect Key"
+        alert("Incorrect Key")
     }
 }
