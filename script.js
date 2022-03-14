@@ -1,3 +1,3 @@
 function videos_clicked() {
-    alert("test")
+    window.location.href = "videos.html";
 }
