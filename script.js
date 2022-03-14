@@ -18,3 +18,7 @@ function eval_key() {
         alert("Incorrect Key")
     }
 }
+
+function scratch_link_enter() {
+    alert("Add Games Manually For Now...")
+}
