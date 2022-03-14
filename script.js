@@ -10,7 +10,7 @@ function games_clicked() {
     window.location.href = "games.html";
 }
 function eval_key() {
-    key = document.getElementById("key_text_box")
+    key = document.getElementById("key_text_box").value
     if (key == "6ty9lkpy") {
         window.location.href = "pro.html";
     }

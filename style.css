@@ -20,3 +20,7 @@ input {
 input:hover {
     background-color: greenyellow;
 }
+
+#key_text_box:hover {
+    background-color: blue;
+}
