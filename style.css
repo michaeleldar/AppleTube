@@ -11,3 +11,12 @@ p {
     color: blue;
     text-align: center;
 }
+
+input {
+    background-color: blue;
+    font-size: 150%;
+}
+
+input:hover {
+    background-color: greenyellow;
+}
