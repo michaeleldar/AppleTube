@@ -44,6 +44,6 @@ def generate_page(link, user):
     html_page.write("</head>\n")
     html_page.write("<body>\n")
     html_page.write("<h1>" +  title_text +"</h1>\n")
-
+    html_page.write("<h2>made by </h2>\n")
 
 generate_page("https://scratch.mit.edu/projects/564962221/", 1)
