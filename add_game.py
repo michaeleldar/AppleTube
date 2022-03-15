@@ -58,7 +58,7 @@ def generate_page(link, user):
     games_page = open("games.html", "w")
     for x in games_page_lines:
         if x == "   </p><br>":
-            break
+            games_page.write("<a href=\"games/" + title_text_code + ".html" + "\">" + title_text + "</a>\n")
         else:
             games_page.write(x = "\n")
     
