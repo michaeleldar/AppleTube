@@ -33,7 +33,7 @@ def generate_page(link, user):
                     letters = "title"
     title_text = title_text.replace("\"", "")
     html_page = open(link, 'w')
-    
+    html_page.write("<!DOCTYPE html>\n")
         
 
 
