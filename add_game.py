@@ -1,5 +1,7 @@
 from urllib.request import urlopen
 
+from flask import g
+
 def generate_page(link, user):
     temp = str(link).replace('https://', 'https://api.')
     page_text = urlopen(temp)
@@ -50,6 +52,11 @@ def generate_page(link, user):
     html_page.write("</p>\n")
     html_page.write("</body>\n")
     html_page.write("</html>\n")
-    games_page = open("games.html", "a")
+    games_page = open("games.html", "r")
+    games_page_lines = games_page.read().split("\n")
+    games_page.close()
+    
+    
+
 
 generate_page("https://scratch.mit.edu/projects/564962221/", "test")
