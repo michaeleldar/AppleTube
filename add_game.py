@@ -34,6 +34,10 @@ def generate_page(link, user):
     title_text = title_text.replace("\"", "")
     html_page = open(link, 'w')
     html_page.write("<!DOCTYPE html>\n")
+    html_page.write("<html>\n")
+    html_page.write("<head>\n")
+    html_page.write("<title>AppleTube</title>\n")
+    html_page.write("<link rel=\"stylesheet\" href=\"style.css\"\n")
         
 
 

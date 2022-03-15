@@ -20,5 +20,5 @@ function eval_key() {
 }
 
 function scratch_link_enter() {
-    alert("Add Games Manually For Now...")
+    alert("Add Games Using add_game.py for now...")
 }
