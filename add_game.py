@@ -34,7 +34,7 @@ def generate_page(link, user):
     title_text = title_text.replace("\"", "")
     title_text_code = title_text.replace(" ", "_")
     title_text_code = title_text_code.replace("/", "_")
-    html_page = open(title_text_code + ".html", 'w')
+    html_page = open("games/" + title_text_code + ".html", 'w')
     html_page.write("<!DOCTYPE html>\n")
     html_page.write("<html>\n")
     html_page.write("<head>\n")
