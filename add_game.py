@@ -32,7 +32,7 @@ def generate_page(link, user):
                 elif x == "l":
                     letters = "title"
     title_text = title_text.replace("\"", "")
-    print(title_text)
+    
         
 
 
