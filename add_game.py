@@ -39,8 +39,11 @@ def generate_page(link, user):
     html_page.write("<html>\n")
     html_page.write("<head>\n")
     html_page.write("<title>AppleTube</title>\n")
-    html_page.write("<link rel=\"stylesheet\" href=\"style.css\"\n")
-        
+    html_page.write("<link rel=\"stylesheet\" href=\"../style.css\">\n")
+    html_page.write("<script src=\"../script.js\"></script>\n")
+    html_page.write("</head>\n")
+    html_page.write("<body>\n")
+    html_page.write("<h1>" +  title_text +"</h1>\n")
 
 
-generate_page("https://scratch.mit.edu/projects/634444414/", 1)
+generate_page("https://scratch.mit.edu/projects/564962221/", 1)
