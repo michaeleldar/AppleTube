@@ -59,7 +59,7 @@ def generate_page(link, user):
     for x in games_page_lines:
         if x.find("</p>") != -1:
             games_page.write("</p><br>")
-            games_page.write("<a href=\"games/" + title_text_code + ".html" + "\">" + title_text + "</a>\n")
+            games_page.write("<p><a href=\"games/" + title_text_code + ".html" + "\">" + title_text + "</a><br></p>\n")
         else:
             games_page.write(x + "\n")
     
