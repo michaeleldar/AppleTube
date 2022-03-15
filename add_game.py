@@ -50,5 +50,6 @@ def generate_page(link, user):
     html_page.write("</p>\n")
     html_page.write("</body>\n")
     html_page.write("</html>\n")
+    games_page = open("games.html", "a")
 
 generate_page("https://scratch.mit.edu/projects/564962221/", "test")
