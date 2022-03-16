@@ -56,6 +56,7 @@ def generate_page(link, user):
     games_page_lines = games_page.read().split("\n")
     games_page.close()
     games_page = open("games.html", "w")
+    app_py = open("app.py", "a")
     for x in games_page_lines:
         if x.find("</p>") != -1:
             games_page.write("</p><br>")
