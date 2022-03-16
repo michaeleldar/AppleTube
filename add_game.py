@@ -66,7 +66,8 @@ def generate_page(link, user):
     app_py.write("@app.route('/games/" + title_text_code + "')\n")
     app_py.write("def games_" + title_text_code + "(): ")
     app_py.write("    url_for('static', filename='style.css')")
-    app_py.write("    url_for('static', filename='style.css')")
+    app_py.write("    url_for('static', filename='script.js')")
+    app_py.write("    return render_template('games/" + title_text_code + ".html')")
     
 
 
