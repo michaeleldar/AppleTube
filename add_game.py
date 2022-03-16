@@ -42,7 +42,7 @@ def generate_page(link, user):
     html_page.write("<head>\n")
     html_page.write("<title>AppleTube</title>\n")
     html_page.write("<link rel=\"stylesheet\" href=\"../../static/style.css\">\n")
-    html_page.write("<script src=\"../script.js\"></script>\n")
+    html_page.write("<script src=\"../../static/script.js\"></script>\n")
     html_page.write("</head>\n")
     html_page.write("<body>\n")
     html_page.write("<h1>" +  title_text + "</h1>\n")
