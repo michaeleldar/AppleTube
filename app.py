@@ -16,3 +16,15 @@ def games():
     url_for('static', filename="style.css")
     url_for('static', filename="script.js")
     return render_template('games.html')
+
+@app.route('/scratchtube')
+def scratchtube():
+    url_for('static', filename="style.css")
+    url_for('static', filename="script.js")
+    return render_template('scratchtube.html')
+
+@app.route('/tutorials')
+def scratchtube():
+    url_for('static', filename="style.css")
+    url_for('static', filename="script.js")
+    return render_template('tutorials.html')
