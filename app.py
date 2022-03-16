@@ -24,7 +24,7 @@ def scratchtube():
     return render_template('scratchtube.html')
 
 @app.route('/tutorials')
-def scratchtube():
+def tutorials():
     url_for('static', filename="style.css")
     url_for('static', filename="script.js")
     return render_template('tutorials.html')
