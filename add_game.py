@@ -36,7 +36,7 @@ def generate_page(link, user):
     title_text = title_text.replace("\"", "")
     title_text_code = title_text.replace(" ", "_")
     title_text_code = title_text_code.replace("/", "_")
-    html_page = open("games/" + title_text_code + ".html", 'w')
+    html_page = open("templates/games/" + title_text_code + ".html", 'w')
     html_page.write("<!DOCTYPE html>\n")
     html_page.write("<html>\n")
     html_page.write("<head>\n")
@@ -52,10 +52,10 @@ def generate_page(link, user):
     html_page.write("</p>\n")
     html_page.write("</body>\n")
     html_page.write("</html>\n")
-    games_page = open("games.html", "r")
+    games_page = open("templates/games.html", "r")
     games_page_lines = games_page.read().split("\n")
     games_page.close()
-    games_page = open("games.html", "w")
+    games_page = open("templates/games.html", "w")
     app_py = open("app.py", "a")
     for x in games_page_lines:
         if x.find("</p>") != -1:
@@ -63,11 +63,11 @@ def generate_page(link, user):
             games_page.write("<p><a href=\"games/" + title_text_code + "\">" + title_text + "</a><br></p>\n")
         else:
             games_page.write(x + "\n")
-    app_py.write("@app.route('/games/" + title_text_code + "')\n")
-    app_py.write("def games_" + title_text_code + "(): ")
-    app_py.write("    url_for('static', filename='style.css')")
-    app_py.write("    url_for('static', filename='script.js')")
-    app_py.write("    return render_template('games/" + title_text_code + ".html')")
+    app_py.write("\n\n\n@app.route('/games/" + title_text_code + "')\n")
+    app_py.write("def games_" + title_text_code.replace(".", "_") + "(): \n")
+    app_py.write("    url_for('static', filename='style.css')\n")
+    app_py.write("    url_for('static', filename='script.js')\n")
+    app_py.write("    return render_template('games/" + title_text_code + ".html')\n")
     
 
 
