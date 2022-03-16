@@ -63,6 +63,10 @@ def generate_page(link, user):
             games_page.write("<p><a href=\"games/" + title_text_code + "\">" + title_text + "</a><br></p>\n")
         else:
             games_page.write(x + "\n")
+    app_py.write("@app.route('/games/" + title_text_code + "')\n")
+    app_py.write("def games_" + title_text_code + "(): ")
+    app_py.write("    url_for('static', filename='style.css')")
+    app_py.write("    url_for('static', filename='style.css')")
     
 
 
