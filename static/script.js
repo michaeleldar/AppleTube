@@ -1,18 +1,18 @@
 var key;
 
 function tutorials_clicked() {
-    window.location.href = "tutorials.html";
+    window.location.href = "tutorials";
 }
 function scratchtube_clicked() {
-    window.location.href = "scratchtube.html";
+    window.location.href = "scratchtube";
 }
 function games_clicked() {
-    window.location.href = "games.html";
+    window.location.href = "games";
 }
 function eval_key() {
     key = document.getElementById("key_text_box").value
     if (key == "6ty9lkpy") {
-        window.location.href = "pro.html";
+        window.location.href = "pro";
     }
     else {
         alert("Incorrect Key")
